@@ -60,6 +60,9 @@ nav ul {
 .gameInfo {
   margin: 20px 0px;
   font-family: "Baloo Bhaina 2", cursive;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .imgbox img {
