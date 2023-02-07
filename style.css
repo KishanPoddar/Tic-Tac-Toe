@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap");
+/*font-family: 'Baloo Bhaina 2', cursive;*/
+/*font-family: 'Roboto', sans-serif;*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: rgb(121, 24, 124);
+  color: white;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  font-family: "Roboto", sans-serif;
+}
+
+nav ul {
+  list-style: none;
+}
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 23px;
+}
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.box {
+  border: 2px solid black;
+  font-size: 8vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  background-color: rgb(245, 242, 240);
+}
+
+.info {
+  font-size: 25px;
+}
+
+.gameInfo {
+  padding: 5px 35px;
+  margin: 5px 29px;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+
+.imgbox img {
+  width: 0px;
+  transition: width 1s ease-in-out;
+}
+
+.br-0 {
+  border-right: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bt-0 {
+  border-top: 0px;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+
+#reset {
+  margin: 0px 23px;
+  padding: 1px 18px;
+  background-color: rgb(250, 241, 250);
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Baloo Bhaina 2", cursive;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.line {
+  background-color: red;
+  height: 3px;
+  width: 0px;
+  position: absolute;
+  background-color: #911d91;
+  transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+  .gameContainer {
+    flex-wrap: wrap;
+  }
+  .gameInfo {
+    margin-top: 34px;
+  }
+  .gameInfo h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .container {
+    grid-template-rows: repeat(3, 20vw);
+    grid-template-columns: repeat(3, 20vw);
+  }
+  .resetAndInfo {
+    text-align: center;
+  }
+}
